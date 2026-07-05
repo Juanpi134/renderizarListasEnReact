@@ -32,6 +32,12 @@ function Object() {
     .filter((jugador) => jugador.anoto === false)
     .map((jugador, indice) => <li key={indice}>{jugador.jugador}</li>);
 
+// la key es un prop especial que react utiliza para identificara a cada elemento dentro de una lista
+//como el estado cambio react necesita re-renderizar esa lista, y necesita diferenciar por así decir cuales son los elementos
+//sin esa forma react asume que todo cambió y vuelve a crear a cada nodo del DOM desde cero
+
+
+
   //retornamos la lista
   return (
     <>
