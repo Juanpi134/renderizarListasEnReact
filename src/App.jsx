@@ -3,8 +3,10 @@ import Object from "./componentes/Object"
 
 function App(){
   return (
+    <div>
     <List></List>
     <Object></Object>
+    </div>
   )
 }
 
